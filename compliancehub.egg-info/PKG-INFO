@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: compliancehub
+Version: 0.1.0
+Requires-Dist: click
+Requires-Dist: SQLAlchemy
+Requires-Dist: pandas
+Requires-Dist: Jinja2
+Requires-Dist: WeasyPrint
+Dynamic: requires-dist

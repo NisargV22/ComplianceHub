@@ -1,0 +1,23 @@
+[
+    {
+        "id": "AC-2",
+        "framework": "CIS Controls v8",
+        "title": "Account Management",
+        "description": "Establish and maintain an inventory of all accounts to ensure only authorized users have access.",
+        "domain": "Access Control"
+    },
+    {
+        "id": "IA-5",
+        "framework": "CIS Controls v8",
+        "title": "Authenticator Management",
+        "description": "Manage authenticators (e.g., passwords, keys) to verify user identities.",
+        "domain": "Access Control"
+    },
+    {
+        "id": "IR-1",
+        "framework": "CIS Controls v8",
+        "title": "Incident Response Plan",
+        "description": "Establish and maintain an incident response plan to ensure effective response to cybersecurity events.",
+        "domain": "Incident Response"
+    }
+]

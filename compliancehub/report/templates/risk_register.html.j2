@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body { font-family: sans-serif; }
+    h1 { color: #333; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #eee; }
+    .risk-low { color: green; font-weight: bold; }
+    .risk-medium { color: orange; font-weight: bold; }
+    .risk-high { color: red; font-weight: bold; }
+    .risk-critical { color: darkred; font-weight: bold; }
+</style>
+</head>
+<body>
+    <h1>Risk Register Report</h1>
+    <p>Generated on: {{ generated_date }}</p>
+    
+    <table>
+        <tr>
+            <th>Finding ID</th>
+            <th>Description</th>
+            <th>Control ID</th>
+            <th>Likelihood</th>
+            <th>Impact</th>
+            <th>Risk Rating</th>
+            <th>Status</th>
+        </tr>
+        {% for r in results %}
+        <tr>
+            <td>{{ r.id }}</td>
+            <td>{{ r.description }}</td>
+            <td>{{ r.control_id or 'N/A' }}</td>
+            <td>{{ r.likelihood | capitalize }}</td>
+            <td>{{ r.impact | capitalize }}</td>
+            <td class="risk-{{ r.risk_rating.lower() }}">{{ r.risk_rating }}</td>
+            <td>{{ r.status }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+click
+SQLAlchemy
+pandas
+Jinja2
+WeasyPrint

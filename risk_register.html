@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body { font-family: sans-serif; }
+    h1 { color: #333; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #eee; }
+    .risk-low { color: green; font-weight: bold; }
+    .risk-medium { color: orange; font-weight: bold; }
+    .risk-high { color: red; font-weight: bold; }
+    .risk-critical { color: darkred; font-weight: bold; }
+</style>
+</head>
+<body>
+    <h1>Risk Register Report</h1>
+    <p>Generated on: 2026-07-18</p>
+    
+    <table>
+        <tr>
+            <th>Finding ID</th>
+            <th>Description</th>
+            <th>Control ID</th>
+            <th>Likelihood</th>
+            <th>Impact</th>
+            <th>Risk Rating</th>
+            <th>Status</th>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td>No MFA on privileged accounts</td>
+            <td>IA-5</td>
+            <td>High</td>
+            <td>High</td>
+            <td class="risk-critical">Critical</td>
+            <td>Open</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
